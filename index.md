@@ -1,4 +1,3 @@
-# ScaleIT Deokumentation
 
 test ohne html
 
