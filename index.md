@@ -5,7 +5,7 @@ In diesen Seiten steht alles rund um die Erstellung von ScaleIt Apps.
 
 ## Vorkenntnisse
 
-Folgende Vorkenntnisse sind hilfreich, um eine ScaleIt App zu entwickeln.
+Folgende Vorkenntnisse sind hilfreich, um eine ScaleIT App zu entwickeln.
 
 * Linux Command-Line
 * Docker
