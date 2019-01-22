@@ -15,13 +15,47 @@ Bei der ScaleIT App-Readiness wird unterschieden in
 
 # Architektur
 
-## Grundsätzliches
+## Betriebsumgbungen / App-Execution-Environments (AEE)
+
+Die Betriebsumgebungen einer Apps werden als App-Execution-Environments (AEE) bezeichnet.
+AEEs sind immer Docker-basiert. 
+
+Folgende Betriebsumgebungen sind definiert:
+
+* ScaleIT-Rancher 1.6
+* ScaleIT-Docker-Compose
+* ScaleIT-Kubernetes
+
+Eine ScaleIT-App 
+
+* MUSS die AEE ScaleIT-Rancher 1.6 unterstützen
+* SOLL die AEE ScaleIT-Docker-Compose unterstützen
+* KANN die AEE ScaleIT-Kubernetes unterstützen
+
+## Anforderungen an eine ScaleIT-App?
 
 Eine ScaleIT-App 
 
 * MUSS Docker-basiert sein
 * KANN dabei aus einem oder mehreren Docker-Containern bestehen.
-* MUSS per Rancher-Template (Rancher 1.6) installierbar sein. 
+
+Die App SOLL self-contained sein, d.h. sie sollte nach der Installation
+isoliert lauffähig sein. Wenn sie externe Ressourcen benötigt (z.B. eine
+Datenbank), soll diese in der App enthalten sein. Die Datenbank soll
+bei der Installation konfigurierbar sein, so dass eine andere Datenbank 
+(z.B. aus Datensicherheitsgründen) verwendet werden kann.
+
+In jeder ScaleIT-Plattform sind folgende Dienste verfügbar, die eine
+App nicht selber enthalten muss:
+
+* MQTT-Broker (Ports 1883/1884)
+* Verzeichnisdienst ETCD (Port 49501)
+
+Für die Nutzung dieser Services in einer App gilt (MUSS):
+
+* [ScaleIT Messaging mit Mqtt](scaleit-messaging.md)
+* [ScaleIT Directory-Services mit ETCD](scaleit-etcd.md)
+
 
 ## Der ScaleIT App-Name
 
@@ -41,34 +75,40 @@ Beispiele gültiger App-Namen:
 
 Folgende Verzeichnis-Struktur MUSS in der App bestehen:
 
-    <app_name>
-    ├── docker-compose.yml
-    ├── README
-    ├── DomainSoftware/
-    | ├── <app-container-1>/
-    |   ├── Dockerfile
-    |   └── ...
-    ├── Resources/
-      ├── Documentation/
-      ├── App-Pools/
-        └── Rancher1.6/
-          └── <app-name>/
-            ├── README.md
-            ├── config.yml
-            └── 0
-              ├── docker-compose.yml
-              ├── rancher-compose.yml
-              └── README.md
+    01      <app_name>
+    02      ├── docker-compose.yml
+    03      ├── README.md
+    04      ├── DomainSoftware/
+    05      | ├── <app-container-1>/
+    06      |   ├── Dockerfile
+    07      |   └── ...
+    08      ├── Resources/
+    09      ├── Documentation/
+    10        ├── AppExecutionEnvironments/
+    11          └── ScaleIT-Rancher1.6/
+    12            └── <app-name>/
+    13              ├── README.md
+    14              ├── config.yml
+    15              └── 0
+    16                ├── docker-compose.yml
+    17                ├── rancher-compose.yml
+    18                └── README.md
+
+Wenn eine App das AEE ScaleIT-Docker-Compose unterstützt, MUSS folgendes Verzeichnis aufgenommen werden
+
+    50          ├── ScaleIT-Docker/
+    51            └── docker-compose.yml
+
 
 Wenn eine App Sidecars hat, MUSS folgendes Verzeichnis dazukommen:
 
-    <app_name>
-    └── Platform Sidecars/ 
-    . ├── <sidecar-container-1>/
-    . | ├── Dockerfile
-    . | └── ...
-    . └── SidecarContainer2/
-    . . └── Dockerfile
+    61      <app_name>
+    62      └── Platform Sidecars/ 
+    63      . ├── <sidecar-container-1>/
+    64      . | ├── Dockerfile
+    65      . | └── ...
+    66      . └── SidecarContainer2/
+    67      . . └── Dockerfile
 
 
 ## Benutzungsoberfläche / User Interface (UI) und Schnittstellen
