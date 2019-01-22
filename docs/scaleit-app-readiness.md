@@ -73,7 +73,7 @@ Wenn eine App Sidecars hat, MUSS folgendes Verzeichnis dazukommen:
 
 ## Benutzungsoberfläche / User Interface (UI) und Schnittstellen
 
-Eine ScaleIT-App muss ein Web-UI haben. 
+Eine ScaleIT-App MUSS ein Web-UI haben. 
 
 Es KANN mehrere haben (z.B. ein Sidecar-UI oder ein Dokumentations-UI)
 
@@ -89,7 +89,7 @@ Eine ScaleIT-App MUSS ein Rancher-Template unter dem Namen der App anlegen.
 
 ## Networking einer App
 
-# Zugriff von außerhalb der ScaleIT-Plattform auf Apps
+### Zugriff von außerhalb der ScaleIT-Plattform auf Apps
 
 Eine ScaleIT-App KANN Schnittstellen nach "außen" haben, z.B. ein oder mehrere Web-UIs, REST-APIs, etc.
 
@@ -99,7 +99,7 @@ zugegriffen (z.B. per Web-Browsern von Arbeitsplätzen).
 ScaleIT Core Enterprise-Edition: Hierzu gibt es den https-Proxy, der nach außen alle Schnittstellen
 über http/https (Port 80/443) anbietet und intern auf die Apps unter deren Rancher-Netzwerknamen zugreift.
 
-## Networking innerhalb einer App (zwischen Container/Services)
+### Networking innerhalb einer App (zwischen Container/Services)
 
 Innerhalb einer App kann ein (Docker-Compose-)Service über seinen Namen aufgerufen werden.
 
@@ -108,7 +108,7 @@ Container/Service  ```de-ondics-pacman-db``` zugegriffen werden:
 
     $ ping de-ondics-pacman
     
-## Networking zwischen Apps
+### Networking zwischen Apps
 
 Innerhalb Rancher kann auf einen Service einer anderen App (eines anderen Rancher-Stacks) so zugegriffen werden:
 ```<service_name>.<appname>```:
@@ -117,7 +117,7 @@ Innerhalb Rancher kann auf einen Service einer anderen App (eines anderen Ranche
 
 [Weitere Infos zum Rancher-Networking zwischen Stacks/ScaleIT-Apps](https://rancher.com/docs/rancher/v1.6/en/cattle/internal-dns-service/)
 
-## Networking zu Entwicklungszwecken
+### Networking zu Entwicklungszwecken
 
 Die Web-UIs und Schnittstellen SOLLEN über TCP/IP-Ports in der App erreichbar sein.
 
