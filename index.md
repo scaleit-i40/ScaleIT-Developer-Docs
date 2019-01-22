@@ -1,19 +1,17 @@
 # ScaleIT Developer Docs
 
-In diesen Seiten steht alles rund um die Erstellung von ScaleIt Apps. 
+In diesen Seiten steht alles rund um die Erstellung von ScaleIT Apps. 
 
+## Inhalt
 
-## Vorkenntnisse
+* Was ist ScaleIT I4.0?
+* Die Architektur von ScaleIT I4.0
+* Entwicklung einer App
+* Die Entwicklungsumgebung
+* FAQ
 
-Folgende Vorkenntnisse sind hilfreich, um eine ScaleIT App zu entwickeln.
+## Autor
 
-* Linux Command-Line
-* Docker
-* Docker-Compose
-* GIT
+Ondics GmbH, Neckarstraße 66/1a, 73728 Esslingen
 
-Die wichtigsten Befehle, die benötigt werden, stehen in unserem [ScaleIT App Cheat Sheet](cheat-sheet.md).
-
-## Die ersten Schritte
-
-... sind gar nicht schwer...
+(C) 2019, Ondics GmbH
