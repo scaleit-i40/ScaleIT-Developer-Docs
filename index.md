@@ -6,7 +6,7 @@ In diesen Seiten steht alles rund um die Erstellung von ScaleIT Apps.
 
 * Was ist ScaleIT? - Kurze Einführung
 * Was ist eine ScaleIT-App? Die ScaleIT-App-Readiness
-* Entwicklung einer ScaleIT-App
+* [Entwicklung einer ScaleIT-App](docs/entwicklung.md)
 
 Die wichtigsten Befehle, die benötigt werden, stehen im [ScaleIT App Cheat Sheet](docs/scaleit-dev-cheatsheet.md).
 
