@@ -1,14 +1,14 @@
-# ScaleIT Developer Docs
+# ScaleIT Developer Dokumentation
 
 In diesen Seiten steht alles rund um die Erstellung von ScaleIT Apps. 
 
 ## Inhalt
 
-* Was ist ScaleIT I4.0?
-* Die Architektur von ScaleIT I4.0
-* Entwicklung einer App
-* Die Entwicklungsumgebung
-* FAQ
+* Was ist ScaleIT? - Kurze Einführung
+* Was ist eine ScaleIT-App? Die ScaleIT-App-Readiness
+* [Entwicklung einer ScaleIT-App](docs/entwicklung.md)
+
+Die wichtigsten Befehle, die benötigt werden, stehen im [ScaleIT App Cheat Sheet](docs/scaleit-dev-cheatsheet.md).
 
 ## Autor
 
