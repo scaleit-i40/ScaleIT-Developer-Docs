@@ -21,6 +21,7 @@ Folgende Vorkenntnisse sind hilfreich, um eine ScaleIT App zu entwickeln.
 * Docker
 * Docker-Compose
 * GIT
+* Diverse Tools (z.B. make)
 
 Die wichtigsten Befehle, die benötigt werden, stehen in unserem [ScaleIT App Cheat Sheet](scaleit-dev-cheatsheet.md).
 
