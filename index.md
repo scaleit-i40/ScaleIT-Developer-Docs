@@ -1,9 +1,8 @@
 # ScaleIT Developer Dokumentation
 
-In diesen Seiten steht alles rund um die Erstellung von ScaleIt Apps. 
+In diesen Seiten steht alles rund um die Erstellung von ScaleIT Apps. 
 
-
-## Überblick
+## Inhalt
 
 * Was ist ScaleIT? - Kurze Einführung
 * Was ist eine ScaleIT-App? Die ScaleIT-App-Readiness
