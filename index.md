@@ -1,19 +1,18 @@
-# ScaleIT Developer Docs
+# ScaleIT Developer Dokumentation
 
 In diesen Seiten steht alles rund um die Erstellung von ScaleIt Apps. 
 
 
-## Vorkenntnisse
+## Überblick
 
-Folgende Vorkenntnisse sind hilfreich, um eine ScaleIT App zu entwickeln.
+* Was ist ScaleIT? - Kurze Einführung
+* Was ist eine ScaleIT-App? Die ScaleIT-App-Readiness
+* Entwicklung einer ScaleIT-App
 
-* Linux Command-Line
-* Docker
-* Docker-Compose
-* GIT
+Die wichtigsten Befehle, die benötigt werden, stehen im [ScaleIT App Cheat Sheet](docs/scaleit-dev-cheatsheet.md).
 
-Die wichtigsten Befehle, die benötigt werden, stehen in unserem [ScaleIT App Cheat Sheet](cheat-sheet.md).
+## Autor
 
-## Die ersten Schritte
+Ondics GmbH, Neckarstraße 66/1a, 73728 Esslingen
 
-... sind gar nicht schwer...
+(C) 2019, Ondics GmbH
