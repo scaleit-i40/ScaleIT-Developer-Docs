@@ -79,13 +79,13 @@ Es KANN mehrere haben (z.B. ein Sidecar-UI oder ein Dokumentations-UI)
 
 ## Rancher1.6 Integration
 
-Eine ScaleIT-Apps MUSS in der Umgebung (Rancher 1.6)[https://rancher.com/docs/rancher/v1.6/en/] laufen.
+Eine ScaleIT-Apps MUSS in der Umgebung [Rancher 1.6](https://rancher.com/docs/rancher/v1.6/en/) laufen.
 
 ### Rancher-Catalog
 
 Eine ScaleIT-App MUSS ein Rancher-Template unter dem Namen der App anlegen. 
 
-(Offizielle Dokumentation zu privaten Rancher-Catalogs)[https://rancher.com/docs/rancher/v1.6/en/catalog/private-catalog/]
+[Offizielle Dokumentation zu privaten Rancher-Catalogs](https://rancher.com/docs/rancher/v1.6/en/catalog/private-catalog/)
 
 ## Networking einer App
 
@@ -115,7 +115,7 @@ Innerhalb Rancher kann auf einen Service einer anderen App (eines anderen Ranche
 
     $ ping de-ondics-pacman-db.de-ondics-pacman
 
-(Weitere Infos zum Rancher-Networking zwischen Stacks/ScaleIT-Apps)[https://rancher.com/docs/rancher/v1.6/en/cattle/internal-dns-service/]
+[Weitere Infos zum Rancher-Networking zwischen Stacks/ScaleIT-Apps](https://rancher.com/docs/rancher/v1.6/en/cattle/internal-dns-service/)
 
 ## Networking zu Entwicklungszwecken
 
@@ -129,7 +129,7 @@ nicht mehr benötigt. Das wird durch ein entsprechendes ```docker-compose.yml```
 Falls ein Port auch in Produktion verwendet werden soll, MUSS dieser über alle ScaleIT App-Ökosysteme
 hinweg eindeutig sein. 
 
-(Liste von Ports, die App-Herstellern zugewiesen wurden)[scaleit-app-ports.md]
+[Liste von Ports, die App-Herstellern zugewiesen wurden](scaleit-app-ports.md)
 
 
 
