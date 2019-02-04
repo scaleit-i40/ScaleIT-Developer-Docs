@@ -15,16 +15,16 @@ Bei der ScaleIT App-Readiness wird unterschieden in
 
 # Architektur
 
-## Betriebsumgbungen / App-Execution-Environments (AEE)
+## Betriebsumgbungen = ScaleIT App-Runtime-Environments (SARE)
 
-Die Betriebsumgebungen einer Apps werden als App-Execution-Environments (AEE) bezeichnet.
-AEEs sind immer Docker-basiert. 
+Die Betriebsumgebungen einer Apps werden als ScaleIT App-Runtime-Environments (SARE) bezeichnet.
+SAREs sind immer Docker-basiert. 
 
 Folgende Betriebsumgebungen sind definiert:
 
-* ScaleIT-Rancher 1.6
-* ScaleIT-Docker-Compose
-* ScaleIT-Kubernetes
+* ScaleIT Rancher 1.6
+* ScaleIT Docker-Compose
+* ScaleIT Kubernetes
 
 Eine ScaleIT-App 
 
@@ -37,7 +37,7 @@ Eine ScaleIT-App
 Eine ScaleIT-App 
 
 * MUSS Docker-basiert sein
-* KANN dabei aus einem oder mehreren Docker-Containern bestehen.
+* KANN aus einem oder mehreren Docker-Containern bestehen.
 
 Die App SOLL self-contained sein, d.h. sie sollte nach der Installation
 isoliert lauffähig sein. Wenn sie externe Ressourcen benötigt (z.B. eine
@@ -50,6 +50,9 @@ App nicht selber enthalten muss:
 
 * MQTT-Broker (Ports 1883/1884)
 * Verzeichnisdienst ETCD (Port 49501)
+
+Der MQTT-Broker und der Verzeichnisdienst müssen bei der Installation 
+konfigurierbar sein (IP-Adresse/Hostname, Port).
 
 Für die Nutzung dieser Services in einer App gilt (MUSS):
 
@@ -70,6 +73,7 @@ Beispiele gültiger App-Namen:
     de-ondics-pacman
     de-ondics-simulation2
     de-bigcompany1-app23
+    de-companyx-maschine1-sps
 
 ## Verzeichnisstruktur einer ScaleIT App
 
@@ -84,8 +88,8 @@ Folgende Verzeichnis-Struktur MUSS in der App bestehen:
     07      |   └── ...
     08      ├── Resources/
     09      ├── Documentation/
-    10        ├── AppExecutionEnvironments/
-    11          └── ScaleIT-Rancher1.6/
+    10        ├── AppRuntimeEnvironments/
+    11          └── ScaleITRancher1.6/
     12            └── <app-name>/
     13              ├── README.md
     14              ├── config.yml
@@ -94,9 +98,9 @@ Folgende Verzeichnis-Struktur MUSS in der App bestehen:
     17                ├── rancher-compose.yml
     18                └── README.md
 
-Wenn eine App das AEE ScaleIT-Docker-Compose unterstützt, MUSS folgendes Verzeichnis aufgenommen werden
+Wenn eine App das SARE ScaleIT-Docker-Compose unterstützt, MUSS folgendes Verzeichnis aufgenommen werden
 
-    50          ├── ScaleIT-Docker/
+    50          └── ScaleIT-Docker-Compose/
     51            └── docker-compose.yml
 
 
@@ -115,7 +119,7 @@ Wenn eine App Sidecars hat, MUSS folgendes Verzeichnis dazukommen:
 
 Eine ScaleIT-App MUSS ein Web-UI haben. 
 
-Es KANN mehrere haben (z.B. ein Sidecar-UI oder ein Dokumentations-UI)
+Es KANN mehrere Web-UI's haben (z.B. ein Sidecar-UI oder ein Dokumentations-UI)
 
 ## Rancher1.6 Integration
 
