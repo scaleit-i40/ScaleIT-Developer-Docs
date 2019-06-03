@@ -2,20 +2,10 @@
 
 Dokumentation zur ScaleIT Industrie 4.0 Plattform.
 
-https://scaleit-i40.github.io/ScaleIT-Developer-Docs/
+ACHTUNG: Die aktuelle Doku steht unter https://wiki.scaleit-i40.de/index.php?title=Hauptseite
 
-## Mitmachen und beitragen
+Diese Doku ist nicht aktuell!
 
-Fragen können gerne im Forum gestellt werden. Wer Antworten hat, darf auf Fragen gerne antworten.
-
-Wer an dieser Dokumentation mitarbeiten will, ist gerne eingeladen:
-
-* Fork dieses Repos erstellen
-* Änderungen machen
-* Pull request stellen
-
-Den anschließenden Merge führen wir nach Qualitätskontrolle durch.
-Für alle hilfreichen Beiträge sind wir sehr dankbar.
 
 
 ## weitere Ressourcen
