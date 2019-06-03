@@ -2,7 +2,7 @@
 
 Dokumentation zur ScaleIT Industrie 4.0 Plattform.
 
-ACHTUNG: Die aktuelle Doku steht unter https://wiki.scaleit-i40.de/index.php?title=Hauptseite
+ACHTUNG: Die aktuelle Doku steht unter https://wiki.scaleit-i40.de
 
 Diese Doku ist nicht aktuell!
 
